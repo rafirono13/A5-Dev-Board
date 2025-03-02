@@ -29,11 +29,21 @@ for (let i = 0; i < buttons.length; i++){
         // Append it to the activity log container
         activityLogContainer.appendChild(activityDiv);
 
-        
+
+
+        let allDisabled = true;
+        buttons.forEach(function(button) {
+            if (!button.disabled) {
+                allDisabled = false;
+            }
+        });
+
+        if (allDisabled) {
+            alert("Congrats, you've completed all tasks!");
+        }
 
     });
 }
-
 
 let clearHistoryButton = document.getElementById('clear-history-btn');
 
