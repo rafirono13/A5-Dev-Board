@@ -26,7 +26,7 @@ for (let i = 0; i < buttons.length; i++){
         activityDiv.className = "bg-slate-300 w-80 h-auto mx-auto rounded-lg p-4 space-y-2 mb-4";
         activityDiv.textContent = `You have completed "${taskTitle}" at ${currentTime}`;
 
-        // Append it to the activity log container
+
         activityLogContainer.appendChild(activityDiv);
 
 
